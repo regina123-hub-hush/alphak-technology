@@ -22,26 +22,41 @@ body {
   width: 100%;
 }
 
-.navbar nav ul {
+.navbar ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar nav ul li {
-  padding: 5px 10px;
+.navbar li {
+  display: inline;
 }
 
-.navbar nav ul li a {
-  color: #fff;
+.navbar a {
+  font-size: 18px;
+  color: #1e90ff; /* Link text: Dodger Blue */
   text-decoration: none;
-  font-weight: bold;
-  text-transform: capitalize;
+  padding: 10px 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
 }
 
-.navbar nav ul li a:hover {
-  color: #FFD700;
+.navbar a i {
+  color: white; /* Icon color: white */
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00; /* Link text on hover: gold */
+}
+
+.navbar a:hover i {
+  color: #ffcc00; /* Icon color on hover */
 }
 
 /* Footer Navigation */
